@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "Travis Scott",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrepGXPAJKGxmvHUTHg2mjL5mZrsgcjiFRlzHyvlhMSN3Sd02OuKBF5tJNDegbbZgWc3LCRqKTpQNrAk5tWVTve-GWZPp6P2pzIcr4TWPZzQ&s=10",
+        "status":"online",
+        "lastMessage":"hello i'm asap rocky",
+        "lastMessageTime": "12:00 PM"
+    }
+]
