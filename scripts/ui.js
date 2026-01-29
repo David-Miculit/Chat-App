@@ -49,6 +49,7 @@ export async function loadContacts() {
         })
 
         contactList.appendChild(fragment)
+        return contacts
     } catch (err) {
         console.error("Contacts error: ", err)
     }
@@ -108,4 +109,31 @@ export async function selectContact(contact) {
     } catch (err) {
         console.error('Error loading msg: ', err)
     }
+}
+
+export function renderNewMessage(msg) {
+    const container = document.getElementById('message-container')
+    const isMe = msg.senderId ==='me'
+
+    const wrapper = document.createElement('div')
+    wrapper.className = isMe ? 'flex flex-col items-end' : "flex flex-col justify-start"
+
+    const bubble = document.createElement('div')
+    bubble.className = isMe ? 'max-w-[65%] px-3 py-2 bg-blue-100 rounded-lg shadow-lg text-md text-gray-800' : 'max-w-[65%] px-3 py-2 bg-gray-200 rounded-lg shadow-lg text-md text-gray-800'
+
+    const text = document.createElement('p')
+    text.textContent = msg.text
+
+    const time = document.createElement('div')
+    time.className = "text-[10px] text-gray-500 text-right"
+    time.textContent = msg.timestamp
+
+    bubble.append(text, time)
+    wrapper.appendChild(bubble)
+    container.appendChild(wrapper)
+
+    container.scrollTo({
+        top:container.scrollHeight,
+        behavior:'smooth'
+    })
 }

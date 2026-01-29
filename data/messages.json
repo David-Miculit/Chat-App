@@ -1,16 +1,41 @@
 {
-    "1": [
-        {
-        "id": "msg2",
-        "senderId": "1",
-        "text": "hey i'm asap rocky",
-        "timestamp": "12:00 PM"
-        },
-        {
-        "id": "msg1",
-        "senderId": "me",
-        "text": "go away bot",
-        "timestamp": "12:30 PM"
-        }
-    ]
+  "1": [
+    {
+      "id": "msg2",
+      "senderId": "1",
+      "text": "hello i'm asap rocky",
+      "timestamp": "12:00 PM"
+    },
+    {
+      "id": "msg1",
+      "senderId": "me",
+      "text": "go away bot",
+      "timestamp": "12:30 PM"
+    },
+    {
+      "senderId": "me",
+      "text": "asdasd",
+      "timestamp": "12:43"
+    },
+    {
+      "senderId": "me",
+      "text": "asdsa",
+      "timestamp": "12:43"
+    },
+    {
+      "senderId": "me",
+      "text": "sfdsfs",
+      "timestamp": "12:44"
+    },
+    {
+      "senderId": "me",
+      "text": "add",
+      "timestamp": "12:53"
+    },
+    {
+      "senderId": "me",
+      "text": "iii",
+      "timestamp": "12:57"
+    }
+  ]
 }
