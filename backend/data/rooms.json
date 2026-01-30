@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "name": "ChatRoom",
+    "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrepGXPAJKGxmvHUTHg2mjL5mZrsgcjiFRlzHyvlhMSN3Sd02OuKBF5tJNDegbbZgWc3LCRqKTpQNrAk5tWVTve-GWZPp6P2pzIcr4TWPZzQ&s=10",
+    "status": "online",
+    "lastMessage": "alo",
+    "lastMessageTime": "11:21"
+  },
+  {
+    "id": "2",
+    "name": "ChatRoom2",
+    "avatar": "https://i.dailymail.co.uk/i/pix/2016/01/10/09/2FFA223600000578-3378938-image-a-3_1452417884012.jpg",
+    "status": "online",
+    "lastMessage": "boom",
+    "lastMessageTime": "11:50"
+  }
+]

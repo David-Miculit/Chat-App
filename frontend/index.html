@@ -5,7 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, shrink-to-fit=no" />
         <title>Web Chatting App</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="http://cdn.socket.io/4.7.5/socket.io.min.js"></script>
     </head>
+
+    <div id="login-screen" class="fixed inset-0 flex items-center justify-center bg-gray-100 z-50">
+        <div class="bg-white p-6 rounded-xl shadow-md w-80 text-center">
+            <h2 class="text-lg font-bold mb-4">Enter Username</h2>
+            <input id="username-input" type="text" placeholder="Your username" class="rounded border p-2 w-full mb-4">
+            <button id="login-btn" class="bg-blue-500 text-white px-4 py-2 rounded w-full">Login</button>
+        </div>
+    </div>
 
     <body class="bg-blue-50 h-screen overflow-hidden flex items-center justify-center">
         <section class="w-[95%] h-[95%] flex shadow-2xl border border-gray-200 bg-blue-50 rounded-xl">
@@ -18,15 +27,16 @@
                 <section class="px-6 bg-white border-gray-300">
                     <form role="search" class="flex items-center bg-blue-100 rounded-lg px-3 py-2 border border-blue-100 shadow-lg">
                         <input
-                            id="contact-search"
+                            id="room-search"
                             type="search"
                             placeholder="Search for a chat..."
                             class="bg-transparent w-full text-sm outline-none text-gray-700 placeholder:text-gray-500"    
                         >
+                        <button type="submit" hidden></button>
                     </form>
                 </section>
 
-                <nav id="contact-list" class="mt-8 flex-1 overflow-y-auto bg-white rounded-bl-xl">
+                <nav id="room-list" class="mt-8 flex-1 overflow-y-auto bg-white rounded-bl-xl">
                 </nav>
             </aside>
 
@@ -41,9 +51,9 @@
                         </div>
                     </div>
 
-                    <nav class="flex gap-6 text-black">
-                        <button>Search conv</button>
-                        <button>Menu</button>
+                    <nav class="flex gap-2 text-black">
+                        <button class="p-3"><img src="misc/search.png" class="w-4 h-4"></button>
+                        <button class="p-3"><img src="misc/dots.png" class="w-4 h-4"><button>
                     </nav>
                 </header>
 
@@ -62,6 +72,7 @@
                             class="w-full bg-white rounded-lg px-4 py-2 text-sm outline-none focus:ring-1 focus:ring-gray-200"
                             autocomplete="off"
                         >
+                        <button type="submit" hidden></button>
                     </form>
                 </footer>
             </main>
